@@ -12,6 +12,10 @@ class Home extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("Developpeur Flutter", style: TextStyle(fontSize: 32.0)),
+                SizedBox(
+                  height: 5.0,
+                ),
+                decor(),
                 spaceC(),
                 CircleAvatar(
                   radius: 100.0,
@@ -95,6 +99,14 @@ class Home extends StatelessWidget {
         spaceR(),
         Text(text),
       ],
+    );
+  }
+
+  Widget decor() {
+    return Container(
+      height: 1.0,
+      width: 200.0,
+      color: Colors.grey,
     );
   }
 
