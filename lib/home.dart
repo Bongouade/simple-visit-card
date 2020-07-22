@@ -35,7 +35,10 @@ class Home extends StatelessWidget {
                   child: Column(
                     children: [
                       Row(children: [
-                        Icon(Icons.phone),
+                        Icon(
+                          Icons.phone,
+                          size: 22.0,
+                        ),
                         spaceR(),
                         Text(
                           "+225 08 06 08 87",
@@ -44,7 +47,10 @@ class Home extends StatelessWidget {
                       ]),
                       spaceL(),
                       Row(children: [
-                        Icon(Icons.mail),
+                        Icon(
+                          Icons.mail,
+                          size: 22.0,
+                        ),
                         spaceR(),
                         Text(
                           "bongouade@gmail.com",
@@ -53,7 +59,10 @@ class Home extends StatelessWidget {
                       ]),
                       spaceL(),
                       Row(children: [
-                        Icon(Icons.location_on),
+                        Icon(
+                          Icons.location_on,
+                          size: 22.0,
+                        ),
                         spaceR(),
                         Text(
                           "Abidjan, Côte d'Ivoire",
@@ -62,7 +71,10 @@ class Home extends StatelessWidget {
                       ]),
                       spaceL(),
                       Row(children: [
-                        Icon(Icons.home),
+                        Icon(
+                          Icons.home,
+                          size: 22.0,
+                        ),
                         spaceR(),
                         Text(
                           "O'LABO",
@@ -81,6 +93,22 @@ class Home extends StatelessWidget {
                           style: TextStyle(fontSize: 18),
                         ),
                       ]),
+                      spaceL(),
+                      Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 10.0,
+                            backgroundColor: Colors.transparent,
+                            backgroundImage:
+                                AssetImage('assets/github-image.png'),
+                          ),
+                          spaceR(),
+                          Text(
+                            "https://github.com/Bongouade",
+                            style: TextStyle(fontSize: 18),
+                          )
+                        ],
+                      )
                     ],
                   ),
                 ),
